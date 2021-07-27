@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { GroceryForm } from "./addGroceryForm";
+import { GroceryList } from "./groceryList";
+import { GroceryProvider } from "./groceryContext";
 
-function App() {
+var action = "add";
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GroceryProvider>
+      <div className="w-1/2 mx-auto mt-24">
+        <GroceryForm />
+        <GroceryList />
+      </div>
+    </GroceryProvider>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grocery-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.grocery-input {
+  flex: 1;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: 1px #0c0a1b solid;
+}
+
+.grocery-button {
+  padding: 5px 20px;
+  margin-left: 20px;
+  background-color: black;
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+}
+
+.grocery-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+}
+
+.btn {
+  background-color: transparent !important;
+  border: none;
+}
